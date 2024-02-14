@@ -6,7 +6,7 @@ int main()
 {
     int a = 5;
 
-    delete &a;
+    delete &a; // ?
 
     int arr_size;
 
