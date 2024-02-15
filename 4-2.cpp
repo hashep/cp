@@ -27,6 +27,7 @@ public:
     }
     void ShowDate()
     {
+        cout << "YYYY/MM/DD : " << year_ << "/" << month_ << "/" << day_ << endl;
     }
 };
 
@@ -36,18 +37,7 @@ int main()
 
     int year, month, day;
     cout << "seturyear : ";
-
-    while (cin >> year)
-    {
-        if (1999 < year < 2025)
-        {
-        }
-        else
-        {
-            cout << "plz enter value within 1999~2025" << endl;
-        }
-    }
-
+    cin >> year;
     cout << "seturmonth : ";
     cin >> month;
     cout << "seturday : ";
@@ -58,6 +48,8 @@ int main()
     cout << "add the year : ";
     cin >> addyear;
     date.AddYear(addyear);
+
+    date.ShowDate();
 
     // d
     int AAA;
